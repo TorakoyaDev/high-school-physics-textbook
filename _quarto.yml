@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "高校物理：原理から学ぶ"
+  subtitle: "ベクトルと微積分で現象を読む"
+  author: "TorakoyaDev"
+  date: last-modified
+  language: ja
+  chapters:
+    - index.qmd
+    - part: "第I部　力学：運動をベクトルで読む"
+      chapters:
+        - mechanics/index.qmd
+        - mechanics/vectors.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    html-math-method: mathjax
+
+execute:
+  freeze: auto

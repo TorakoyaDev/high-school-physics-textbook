@@ -1,0 +1,46 @@
+---
+title: "ベクトルで力を表す"
+---
+
+## 力は矢印で表せる
+
+机の上の箱を、右向きに $3\,\mathrm{N}$、上向きに $4\,\mathrm{N}$ 引くことを考えます。力には大きさだけでなく向きがあるので、矢印（ベクトル）で表します。
+
+\[
+\boldsymbol{F}=3\boldsymbol{i}+4\boldsymbol{j}
+\]
+
+ここで $\boldsymbol{i}$ は右向き、$\boldsymbol{j}$ は上向きの単位ベクトルです。
+
+::: {.callout-tip}
+## 手を動かす 1
+
+力 $\boldsymbol{A}=2\boldsymbol{i}+\boldsymbol{j}$ と
+$\boldsymbol{B}=-\boldsymbol{i}+3\boldsymbol{j}$ の和を求めなさい。
+
+**答え**：$\boldsymbol{A}+\boldsymbol{B}=\boldsymbol{i}+4\boldsymbol{j}$
+:::
+
+## 外積と力のモーメント
+
+ドアを回すには、蝶番から離れた位置で、ドアに垂直な向きへ力を加えると効果的です。この「回すはたらき」は力のモーメントで表します。
+
+\[
+\boldsymbol{\tau}=\boldsymbol{r}\times\boldsymbol{F}
+\]
+
+外積の大きさは、二つのベクトルがなす角を $\theta$ として
+
+\[
+|\boldsymbol{r}\times\boldsymbol{F}|=|\boldsymbol{r}|\,|\boldsymbol{F}|\sin\theta
+\]
+
+です。$\sin\theta$ が現れるため、力のうち腕の長さに垂直な成分だけが回転に寄与することが分かります。
+
+::: {.callout-tip}
+## 手を動かす 2
+
+蝶番から $0.80\,\mathrm{m}$ の位置に、ドアと垂直に $15\,\mathrm{N}$ の力を加えるとき、モーメントの大きさを求めなさい。
+
+**答え**：$0.80\times 15=12\,\mathrm{N\,m}$
+:::
