@@ -10,9 +10,9 @@ book:
   language: ja
   chapters:
     - index.qmd
-    - part: "第I部　力学：運動をベクトルで読む"
+    - part: mechanics/index.qmd
       chapters:
-        - mechanics/index.qmd
+        - mechanics/measurement.qmd
         - mechanics/vectors.qmd
 
 format:

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">ベクトルのスカラー倍</title>
+  <desc id="desc">ベクトルAに対し、2Aは同じ向きで2倍の長さ、マイナスAは逆向きで同じ長さ、0Aは零ベクトルとなることを示す。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#2474b5"/></marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#d86b27"/></marker>
+    <style>.panel{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}.title{font:600 22px system-ui,sans-serif;fill:#1f2937}.text{font:18px system-ui,sans-serif;fill:#374151}.blue{stroke:#2474b5;stroke-width:6}.orange{stroke:#d86b27;stroke-width:6}.dot{fill:#7a4da1}</style>
+  </defs>
+  <rect class="panel" x="10" y="10" width="205" height="280" rx="14"/><rect class="panel" x="235" y="10" width="205" height="280" rx="14"/><rect class="panel" x="460" y="10" width="205" height="280" rx="14"/><rect class="panel" x="685" y="10" width="205" height="280" rx="14"/>
+  <text class="title" x="112" y="50" text-anchor="middle">A</text><line class="blue" x1="50" y1="155" x2="170" y2="155" marker-end="url(#arrow)"/><text class="text" x="112" y="230" text-anchor="middle">基準のベクトル</text>
+  <text class="title" x="337" y="50" text-anchor="middle">2A</text><line class="blue" x1="255" y1="155" x2="415" y2="155" marker-end="url(#arrow)"/><text class="text" x="337" y="230" text-anchor="middle">同じ向き・2倍</text>
+  <text class="title" x="562" y="50" text-anchor="middle">−A</text><line class="orange" x1="625" y1="155" x2="505" y2="155" marker-end="url(#arrow2)"/><text class="text" x="562" y="230" text-anchor="middle">逆向き・同じ長さ</text>
+  <text class="title" x="787" y="50" text-anchor="middle">0A</text><circle class="dot" cx="787" cy="155" r="7"/><text class="text" x="787" y="230" text-anchor="middle">零ベクトル</text>
+</svg>

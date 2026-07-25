@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">ベクトル加法の三角形則と平行四辺形則</title>
+  <desc id="desc">左はベクトルAの終点にBの始点をつないで合成する三角形則、右は同じ始点からAとBを描いて対角線を合成ベクトルとする平行四辺形則。</desc>
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#2474b5"/></marker>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#d86b27"/></marker>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#7a4da1"/></marker>
+    <style>.title{font:600 23px system-ui,sans-serif;fill:#1f2937}.text{font:19px system-ui,sans-serif;fill:#374151}.a{stroke:#2474b5;stroke-width:6}.b{stroke:#d86b27;stroke-width:6}.r{stroke:#7a4da1;stroke-width:6}.guide{stroke:#9ca3af;stroke-width:2;stroke-dasharray:7 6}.panel{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}</style>
+  </defs>
+  <rect class="panel" x="10" y="10" width="425" height="340" rx="14"/>
+  <rect class="panel" x="465" y="10" width="425" height="340" rx="14"/>
+  <text class="title" x="222" y="48" text-anchor="middle">三角形則</text>
+  <line class="a" x1="75" y1="270" x2="235" y2="270" marker-end="url(#a1)"/>
+  <line class="b" x1="240" y1="270" x2="340" y2="115" marker-end="url(#a2)"/>
+  <line class="r" x1="75" y1="270" x2="337" y2="118" marker-end="url(#ar)"/>
+  <text class="text" x="150" y="300">A</text><text class="text" x="305" y="205">B</text><text class="text" x="175" y="175">A + B</text>
+  <text class="title" x="677" y="48" text-anchor="middle">平行四辺形則</text>
+  <line class="a" x1="525" y1="270" x2="685" y2="270" marker-end="url(#a1)"/>
+  <line class="b" x1="525" y1="270" x2="625" y2="115" marker-end="url(#a2)"/>
+  <line class="guide" x1="625" y1="115" x2="785" y2="115"/>
+  <line class="guide" x1="685" y1="270" x2="785" y2="115"/>
+  <line class="r" x1="525" y1="270" x2="782" y2="118" marker-end="url(#ar)"/>
+  <text class="text" x="600" y="300">A</text><text class="text" x="565" y="190">B</text><text class="text" x="660" y="185">A + B</text>
+</svg>
