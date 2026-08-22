@@ -2,7 +2,7 @@
 
 ベクトルと微積分を、物理現象を記述して考えるための言葉として身につける高校物理の教科書プロジェクトです。
 
-原稿は [Quarto](https://quarto.org/) で管理します。まずは全体の方針を [書籍構成案](docs/book-plan.md) に、力学導入に関する素材と編集メモを [参照ノート](docs/reference/vector-and-coordinate-notes.md) にまとめています。
+原稿は [Quarto](https://quarto.org/) で管理します。全体の方針、章設計、文章原則、フィードバックから得た学びは [制作ドキュメント](docs/README.md) から参照できます。
 
 ## 方針
 
