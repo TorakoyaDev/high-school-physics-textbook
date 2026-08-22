@@ -31,15 +31,15 @@
 
 ## 斜方投射の骨格
 
-\[
+$$
 \boldsymbol{v}_0=(v_0\cos\theta,\;v_0\sin\theta),\qquad
 \boldsymbol{g}=(0,\;-g)
-\]
+$$
 
-\[
+$$
 x(t)=v_0\cos\theta\,t,\qquad
 y(t)=v_0\sin\theta\,t-\frac12gt^2
-\]
+$$
 
 この例では、式の暗記よりも次の判断を問います。
 
@@ -51,15 +51,15 @@ y(t)=v_0\sin\theta\,t-\frac12gt^2
 
 半径 $r$、角速度 $\omega$ が一定なら、
 
-\[
+$$
 \boldsymbol{r}(t)=(r\cos\omega t,\;r\sin\omega t)
-\]
+$$
 
 から
 
-\[
+$$
 \boldsymbol{v}=\frac{d\boldsymbol{r}}{dt},\qquad
 \boldsymbol{a}=\frac{d\boldsymbol{v}}{dt}=-\omega^2\boldsymbol{r}
-\]
+$$
 
 を得ます。内積 $\boldsymbol{r}\cdot\boldsymbol{v}=0$ により速度が接線方向であること、$\boldsymbol{a}$ が中心向きであることを確認できます。
