@@ -12,7 +12,6 @@ book:
     - index.qmd
     - part: mechanics/index.qmd
       chapters:
-        - mechanics/measurement.qmd
         - mechanics/vectors.qmd
 
 format:

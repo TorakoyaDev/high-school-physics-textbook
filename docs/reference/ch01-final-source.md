@@ -1,11 +1,8 @@
----
-title: "第1章　ベクトル――大きさと向きを表す方法"
-number-sections: false
----
+# 第1章　ベクトル――大きさと向きを表す方法
 
 ## 1. 数だけでは表せない情報
 
-「家から $3\,\mathrm{km}$ 離れた場所」と言われても、それだけでは場所を特定できない。家から東へ $3\,\mathrm{km}$ の場所と、西へ $3\,\mathrm{km}$ の場所は異なるからである。
+「家から \(3\,\mathrm{km}\) 離れた場所」と言われても、それだけでは場所を特定できない。家から東へ \(3\,\mathrm{km}\) の場所と、西へ \(3\,\mathrm{km}\) の場所は異なるからである。
 
 場所の移動を表すには、
 
@@ -16,9 +13,9 @@ number-sections: false
 
 たとえば、
 
-$$
+\[
 \text{東向きに }3\,\mathrm{m}
-$$
+\]
 
 という移動には、大きさと向きが含まれている。
 
@@ -39,7 +36,7 @@ $$
 - 速度
 - 力
 
-「$3\,\mathrm{m}$」はスカラーである。それに「東向き」という情報を加えた「東向きに $3\,\mathrm{m}$」は、ベクトルとして表せる。
+「\(3\,\mathrm{m}\)」はスカラーである。それに「東向き」という情報を加えた「東向きに \(3\,\mathrm{m}\)」は、ベクトルとして表せる。
 
 ベクトルとは、大きさと向きを一つにまとめて表し、計算できるようにしたものである。
 
@@ -54,19 +51,19 @@ $$
 
 一般的なベクトルを、
 
-$$
+\[
 \boldsymbol{A},\qquad \boldsymbol{B}
-$$
+\]
 
 のような太字で表す。
 
-ベクトル $\boldsymbol{A}$ の大きさは $\lvert\boldsymbol{A}\rvert$ と書く。したがって、$\boldsymbol{A}$ は向きを持つベクトルであり、$\lvert\boldsymbol{A}\rvert$ はその大きさを表す0以上の数である。
+ベクトル \(\boldsymbol{A}\) の大きさは \(\lvert\boldsymbol{A}\rvert\) と書く。したがって、\(\boldsymbol{A}\) は向きを持つベクトルであり、\(\lvert\boldsymbol{A}\rvert\) はその大きさを表す0以上の数である。
 
 教科書や手書きの式では、太字の代わりに、
 
-$$
+\[
 \vec{A}
-$$
+\]
 
 のように文字の上へ矢印を付けることもある。本書では、原則として太字を用いる。
 
@@ -95,9 +92,9 @@ $$
 
 ただし、すべての矢印を自由に平行移動してよいわけではない。矢印の始点そのものに意味がある場合は、始点を動かすと、表す内容が変わってしまう。
 
-たとえば、基準となる原点 $O$ から、ある点 $P$ へ向かう矢印を考える。この矢印は、原点から見て点 $P$ がどこにあるかを表している。
+たとえば、基準となる原点 \(O\) から、ある点 \(P\) へ向かう矢印を考える。この矢印は、原点から見て点 \(P\) がどこにあるかを表している。
 
-始点を原点以外の場所へ移すと、同じ点 $P$ の位置を表す矢印ではなくなる。
+始点を原点以外の場所へ移すと、同じ点 \(P\) の位置を表す矢印ではなくなる。
 
 このように、始点の位置まで含めて意味を持つベクトルを、束縛ベクトルという。位置ベクトルは、原点を始点とする束縛ベクトルとして考えられる。
 
@@ -112,23 +109,23 @@ $$
 
 方眼紙の上で、ある点から、
 
-- 右へ $3$
-- 上へ $4$
+- 右へ \(3\)
+- 上へ \(4\)
 
 だけ進む移動を考える。
 
-この移動は、1本の斜めの矢印として表すことができる。同時に、「右へ $3$」と「上へ $4$」という2つの数を使って表すこともできる。
+この移動は、1本の斜めの矢印として表すことができる。同時に、「右へ \(3\)」と「上へ \(4\)」という2つの数を使って表すこともできる。
 
 そこで、このベクトルを、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
 3\\
 4
 \end{pmatrix}
-$$
+\]
 
 と書く。
 
@@ -136,77 +133,77 @@ $$
 
 一般に、2次元のベクトルは、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
 A_x\\
 A_y
 \end{pmatrix}
-$$
+\]
 
-と表す。$A_x$ を $x$ 成分、$A_y$ を $y$ 成分という。
+と表す。\(A_x\) を \(x\) 成分、\(A_y\) を \(y\) 成分という。
 
 成分の正負は、それぞれの軸に沿った向きを表す。
 
-- $A_x>0$：右向き
-- $A_x<0$：左向き
-- $A_y>0$：上向き
-- $A_y<0$：下向き
+- \(A_x>0\)：右向き
+- \(A_x<0\)：左向き
+- \(A_y>0\)：上向き
+- \(A_y<0\)：下向き
 
 たとえば、
 
-$$
+\[
 \boldsymbol{B}
 =
 \begin{pmatrix}
 -2\\
 3
 \end{pmatrix}
-$$
+\]
 
-は、「左へ $2$、上へ $3$」を表す。
+は、「左へ \(2\)、上へ \(3\)」を表す。
 
 ### ベクトルの大きさ
 
-「右へ $3$、上へ $4$」と進む矢印を描くと、横方向と縦方向の成分は、直角三角形の2辺になる。ベクトルの大きさは、その斜辺の長さに当たる。
+「右へ \(3\)、上へ \(4\)」と進む矢印を描くと、横方向と縦方向の成分は、直角三角形の2辺になる。ベクトルの大きさは、その斜辺の長さに当たる。
 
 したがって、三平方の定理から、
 
-$$
+\[
 \lvert\boldsymbol{A}\rvert
 =
 \sqrt{3^2+4^2}
 =
 5
-$$
+\]
 
 となる。
 
 一般に、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
 A_x\\
 A_y
 \end{pmatrix}
-$$
+\]
 
 の大きさは、
 
-$$
+\[
 \lvert\boldsymbol{A}\rvert
 =
 \sqrt{A_x^2+A_y^2}
-$$
+\]
 
 である。
 
 3次元では、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
@@ -214,44 +211,44 @@ A_x\\
 A_y\\
 A_z
 \end{pmatrix}
-$$
+\]
 
 と表し、その大きさは、
 
-$$
+\[
 \lvert\boldsymbol{A}\rvert
 =
 \sqrt{A_x^2+A_y^2+A_z^2}
-$$
+\]
 
 となる。
 
 ### 大きさと角度から成分を求める
 
-ベクトル $\boldsymbol{A}$ が $x$ 軸の正方向となす角を $\theta$ とする。
+ベクトル \(\boldsymbol{A}\) が \(x\) 軸の正方向となす角を \(\theta\) とする。
 
 このとき、三角比を使うと、
 
-$$
+\[
 A_x=\lvert\boldsymbol{A}\rvert\cos\theta
-$$
+\]
 
-$$
+\[
 A_y=\lvert\boldsymbol{A}\rvert\sin\theta
-$$
+\]
 
 となる。
 
 したがって、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
 \lvert\boldsymbol{A}\rvert\cos\theta\\
 \lvert\boldsymbol{A}\rvert\sin\theta
 \end{pmatrix}
-$$
+\]
 
 と表すことができる。
 
@@ -278,11 +275,11 @@ $$
 
 まず、出発駅から乗換駅まで電車で移動し、そこで別の電車に乗り換えて、目的の駅まで移動したとする。
 
-出発駅から乗換駅までの移動を $\boldsymbol{A}$、乗換駅から目的の駅までの移動を $\boldsymbol{B}$ とする。このとき、出発駅から目的の駅までの全体の移動は、
+出発駅から乗換駅までの移動を \(\boldsymbol{A}\)、乗換駅から目的の駅までの移動を \(\boldsymbol{B}\) とする。このとき、出発駅から目的の駅までの全体の移動は、
 
-$$
+\[
 \boldsymbol{A}+\boldsymbol{B}
-$$
+\]
 
 と表される。
 
@@ -292,13 +289,13 @@ $$
 
 電車を乗り継ぐ場合、最初の移動が終わった場所から、次の移動が始まる。
 
-このような連続した移動は、$\boldsymbol{A}$ の終点に $\boldsymbol{B}$ の始点を重ねることで表せる。
+このような連続した移動は、\(\boldsymbol{A}\) の終点に \(\boldsymbol{B}\) の始点を重ねることで表せる。
 
-すると、$\boldsymbol{A}$ の始点から $\boldsymbol{B}$ の終点へ向かう矢印が、
+すると、\(\boldsymbol{A}\) の始点から \(\boldsymbol{B}\) の終点へ向かう矢印が、
 
-$$
+\[
 \boldsymbol{A}+\boldsymbol{B}
-$$
+\]
 
 を表す。
 
@@ -312,19 +309,19 @@ $$
 
 たとえば、1台の台車を2人が異なる向きに同時に引いているとする。2人の引く向きを表す矢印は、どちらも台車の位置を始点として描くことができる。
 
-このように2本のベクトルの始点がそろっている場合は、$\boldsymbol{A}$ と $\boldsymbol{B}$ を2辺とする平行四辺形を作る。その対角線が、
+このように2本のベクトルの始点がそろっている場合は、\(\boldsymbol{A}\) と \(\boldsymbol{B}\) を2辺とする平行四辺形を作る。その対角線が、
 
-$$
+\[
 \boldsymbol{A}+\boldsymbol{B}
-$$
+\]
 
 を表す。
 
 この方法を、平行四辺形の法則という。
 
-三角形の法則と平行四辺形の法則は、異なる加法を表しているのではない。自由ベクトルは平行移動できるため、始点をそろえた $\boldsymbol{B}$ を平行移動して、$\boldsymbol{A}$ の終点につなぐことができる。
+三角形の法則と平行四辺形の法則は、異なる加法を表しているのではない。自由ベクトルは平行移動できるため、始点をそろえた \(\boldsymbol{B}\) を平行移動して、\(\boldsymbol{A}\) の終点につなぐことができる。
 
-したがって、どちらの方法を使っても、同じベクトル $\boldsymbol{A}+\boldsymbol{B}$ が得られる。
+したがって、どちらの方法を使っても、同じベクトル \(\boldsymbol{A}+\boldsymbol{B}\) が得られる。
 
 - ベクトルを順につなげて見るとき：三角形の法則
 - ベクトルの始点をそろえて見るとき：平行四辺形の法則
@@ -333,7 +330,7 @@ $$
 
 ### 成分による加法
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
@@ -347,62 +344,62 @@ A_y
 B_x\\
 B_y
 \end{pmatrix}
-$$
+\]
 
 とする。
 
 ベクトルの和は、横方向の成分同士、縦方向の成分同士をそれぞれ足して、
 
-$$
+\[
 \boldsymbol{A}+\boldsymbol{B}
 =
 \begin{pmatrix}
 A_x+B_x\\
 A_y+B_y
 \end{pmatrix}
-$$
+\]
 
 と計算する。
 
-平行四辺形の対角線は、$\boldsymbol{A}$ と $\boldsymbol{B}$ の順序を入れ替えても変わらない。したがって、
+平行四辺形の対角線は、\(\boldsymbol{A}\) と \(\boldsymbol{B}\) の順序を入れ替えても変わらない。したがって、
 
-$$
+\[
 \boldsymbol{A}+\boldsymbol{B}
 =
 \boldsymbol{B}+\boldsymbol{A}
-$$
+\]
 
 が成り立つ。
 
 ### 零ベクトルと逆ベクトル
 
-大きさが0のベクトルを零ベクトルといい、$\boldsymbol{0}$ と表す。
+大きさが0のベクトルを零ベクトルといい、\(\boldsymbol{0}\) と表す。
 
 どのベクトルに零ベクトルを加えても、元のベクトルは変わらない。
 
-$$
+\[
 \boldsymbol{A}+\boldsymbol{0}
 =
 \boldsymbol{A}
-$$
+\]
 
 零ベクトルには、特定の向きはない。
 
-また、$\boldsymbol{A}$ と大きさが等しく、向きが反対のベクトルを、$\boldsymbol{A}$ の逆ベクトルという。
+また、\(\boldsymbol{A}\) と大きさが等しく、向きが反対のベクトルを、\(\boldsymbol{A}\) の逆ベクトルという。
 
-$$
+\[
 -\boldsymbol{A}
-$$
+\]
 
 と表す。
 
-$\boldsymbol{A}$ に続いて $-\boldsymbol{A}$ をつなぐと、最初の場所へ戻る。そのため、
+\(\boldsymbol{A}\) に続いて \(-\boldsymbol{A}\) をつなぐと、最初の場所へ戻る。そのため、
 
-$$
+\[
 \boldsymbol{A}+(-\boldsymbol{A})
 =
 \boldsymbol{0}
-$$
+\]
 
 となる。
 
@@ -410,36 +407,36 @@ $$
 
 ベクトルの減法は、逆ベクトルの加法として考える。
 
-$$
+\[
 \boldsymbol{A}-\boldsymbol{B}
 =
 \boldsymbol{A}+(-\boldsymbol{B})
-$$
+\]
 
-$\boldsymbol{A}$ と $\boldsymbol{B}$ の始点をそろえて描く。
+\(\boldsymbol{A}\) と \(\boldsymbol{B}\) の始点をそろえて描く。
 
-まず、$\boldsymbol{B}$ の終点から逆ベクトル $-\boldsymbol{B}$ の向きに進むと、共通の始点に戻る。次に、そこから $\boldsymbol{A}$ の向きに進むと、$\boldsymbol{A}$ の終点に着く。
+まず、\(\boldsymbol{B}\) の終点から逆ベクトル \(-\boldsymbol{B}\) の向きに進むと、共通の始点に戻る。次に、そこから \(\boldsymbol{A}\) の向きに進むと、\(\boldsymbol{A}\) の終点に着く。
 
-したがって、$\boldsymbol{B}$ の終点から $\boldsymbol{A}$ の終点へ向かう矢印が、
+したがって、\(\boldsymbol{B}\) の終点から \(\boldsymbol{A}\) の終点へ向かう矢印が、
 
-$$
+\[
 \boldsymbol{A}-\boldsymbol{B}
-$$
+\]
 
 を表す。
 
-言い換えると、ベクトルの減法では、共通の始点ではなく、引くベクトル $\boldsymbol{B}$ の終点を新しい始点として、そこから $\boldsymbol{A}$ の終点を見る。この意味で、減法は「矢印を見る基準となる始点を移す操作」とイメージすることができる。
+言い換えると、ベクトルの減法では、共通の始点ではなく、引くベクトル \(\boldsymbol{B}\) の終点を新しい始点として、そこから \(\boldsymbol{A}\) の終点を見る。この意味で、減法は「矢印を見る基準となる始点を移す操作」とイメージすることができる。
 
 成分では、
 
-$$
+\[
 \boldsymbol{A}-\boldsymbol{B}
 =
 \begin{pmatrix}
 A_x-B_x\\
 A_y-B_y
 \end{pmatrix}
-$$
+\]
 
 と計算する。
 
@@ -449,83 +446,83 @@ $$
 
 ベクトルに普通の数を掛ける操作を、スカラー倍という。
 
-ベクトル $\boldsymbol{A}$ に数 $k$ を掛けたベクトルを、
+ベクトル \(\boldsymbol{A}\) に数 \(k\) を掛けたベクトルを、
 
-$$
+\[
 k\boldsymbol{A}
-$$
+\]
 
 と表す。
 
-たとえば、東向きに $2\,\mathrm{m}$ の移動を表すベクトルを $\boldsymbol{A}$ とする。同じ移動を3回繰り返すと、全体では東向きに $6\,\mathrm{m}$ 移動する。
+たとえば、東向きに \(2\,\mathrm{m}\) の移動を表すベクトルを \(\boldsymbol{A}\) とする。同じ移動を3回繰り返すと、全体では東向きに \(6\,\mathrm{m}\) 移動する。
 
 これは、
 
-$$
+\[
 3\boldsymbol{A}
-$$
+\]
 
 と表せる。
 
 ### スカラー倍と大きさ・向き
 
-ベクトル $\boldsymbol{A}$ を $k$ 倍すると、矢印の長さは $\lvert k\rvert$ 倍になる。
+ベクトル \(\boldsymbol{A}\) を \(k\) 倍すると、矢印の長さは \(\lvert k\rvert\) 倍になる。
 
-向きは、$k$ の符号によって決まる。
+向きは、\(k\) の符号によって決まる。
 
-- $k>0$：$\boldsymbol{A}$ と同じ向き
-- $k<0$：$\boldsymbol{A}$ と反対向き
-- $k=0$：零ベクトル
+- \(k>0\)：\(\boldsymbol{A}\) と同じ向き
+- \(k<0\)：\(\boldsymbol{A}\) と反対向き
+- \(k=0\)：零ベクトル
 
-たとえば、$2\boldsymbol{A}$ は、$\boldsymbol{A}$ と同じ向きで、長さが2倍のベクトルである。
+たとえば、\(2\boldsymbol{A}\) は、\(\boldsymbol{A}\) と同じ向きで、長さが2倍のベクトルである。
 
-一方、$-2\boldsymbol{A}$ は、長さが2倍で、向きが反対のベクトルである。
+一方、\(-2\boldsymbol{A}\) は、長さが2倍で、向きが反対のベクトルである。
 
 ### 成分による計算
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
 A_x\\
 A_y
 \end{pmatrix}
-$$
+\]
 
 とすると、
 
-$$
+\[
 k\boldsymbol{A}
 =
 \begin{pmatrix}
 kA_x\\
 kA_y
 \end{pmatrix}
-$$
+\]
 
 となる。
 
 たとえば、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
 2\\
 -1
 \end{pmatrix}
-$$
+\]
 
 ならば、
 
-$$
+\[
 3\boldsymbol{A}
 =
 \begin{pmatrix}
 6\\
 -3
 \end{pmatrix}
-$$
+\]
 
 である。
 
@@ -533,7 +530,7 @@ $$
 
 スカラー倍の式は、逆向きにも使える。
 
-$$
+\[
 \begin{pmatrix}
 kA_x\\
 kA_y
@@ -544,11 +541,11 @@ k
 A_x\\
 A_y
 \end{pmatrix}
-$$
+\]
 
 たとえば、
 
-$$
+\[
 \begin{pmatrix}
 6\\
 -3
@@ -559,7 +556,7 @@ $$
 2\\
 -1
 \end{pmatrix}
-$$
+\]
 
 と、各成分に共通する数をベクトルの外へくくり出すことができる。
 
@@ -575,9 +572,9 @@ $$
 
 内積を、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}
-$$
+\]
 
 と表す。内積の結果は、ベクトルではなくスカラーである。
 
@@ -594,37 +591,37 @@ $$
 
 ### 大きさと角度による計算
 
-$\boldsymbol{A}$ と $\boldsymbol{B}$ のなす角を $\theta$ とすると、内積を、
+\(\boldsymbol{A}\) と \(\boldsymbol{B}\) のなす角を \(\theta\) とすると、内積を、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}
 =
 \lvert\boldsymbol{A}\rvert
 \lvert\boldsymbol{B}\rvert
 \cos\theta
-$$
+\]
 
 と定義する。
 
-$\boldsymbol{A}$ と $\boldsymbol{B}$ がどちらも零ベクトルでないとき、内積の符号は、2つのベクトルのなす角によって決まる。
+\(\boldsymbol{A}\) と \(\boldsymbol{B}\) がどちらも零ベクトルでないとき、内積の符号は、2つのベクトルのなす角によって決まる。
 
 - 同じ向き、またはなす角が鋭角なら、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}>0
-$$
+\]
 
 - 2つのベクトルが垂直なら、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}=0
-$$
+\]
 
 - 反対向き、またはなす角が鈍角なら、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}<0
-$$
+\]
 
 となる。
 
@@ -632,7 +629,7 @@ $$
 
 2次元では、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
@@ -646,31 +643,31 @@ A_y
 B_x\\
 B_y
 \end{pmatrix}
-$$
+\]
 
 に対して、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}
 =
 A_xB_x+A_yB_y
-$$
+\]
 
 となる。
 
 3次元では、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}
 =
 A_xB_x+A_yB_y+A_zB_z
-$$
+\]
 
 である。
 
 たとえば、
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
@@ -684,17 +681,17 @@ $$
 4\\
 -1
 \end{pmatrix}
-$$
+\]
 
 ならば、
 
-$$
+\[
 \boldsymbol{A}\cdot\boldsymbol{B}
 =
 2\cdot4+3\cdot(-1)
 =
 5
-$$
+\]
 
 となる。
 
@@ -706,46 +703,46 @@ $$
 
 これに対して外積は、一方に対して垂直な方向を向く成分に注目する操作である。外積では、その大きさだけでなく、2つのベクトルが作る平面に垂直な向きも同時に定める。
 
-2つのベクトル $\boldsymbol{A}$、$\boldsymbol{B}$ の外積を、
+2つのベクトル \(\boldsymbol{A}\)、\(\boldsymbol{B}\) の外積を、
 
-$$
+\[
 \boldsymbol{A}\times\boldsymbol{B}
-$$
+\]
 
-と表す。外積の結果は、$\boldsymbol{A}$ と $\boldsymbol{B}$ の両方に垂直な新しいベクトルである。
+と表す。外積の結果は、\(\boldsymbol{A}\) と \(\boldsymbol{B}\) の両方に垂直な新しいベクトルである。
 
 ### 外積の大きさ――平行四辺形の面積
 
-$\boldsymbol{A}$ と $\boldsymbol{B}$ を、始点をそろえて描く。この2本のベクトルを2辺とする平行四辺形を作る。
+\(\boldsymbol{A}\) と \(\boldsymbol{B}\) を、始点をそろえて描く。この2本のベクトルを2辺とする平行四辺形を作る。
 
 外積の大きさは、この平行四辺形の面積に等しい。
 
-$\boldsymbol{A}$ と $\boldsymbol{B}$ のなす角を $\theta$ とすると、平行四辺形の底辺は $\lvert\boldsymbol{A}\rvert$、高さは $\lvert\boldsymbol{B}\rvert\sin\theta$ である。
+\(\boldsymbol{A}\) と \(\boldsymbol{B}\) のなす角を \(\theta\) とすると、平行四辺形の底辺は \(\lvert\boldsymbol{A}\rvert\)、高さは \(\lvert\boldsymbol{B}\rvert\sin\theta\) である。
 
 したがって、
 
-$$
+\[
 \lvert\boldsymbol{A}\times\boldsymbol{B}\rvert
 =
 \lvert\boldsymbol{A}\rvert
 \lvert\boldsymbol{B}\rvert
 \sin\theta
-$$
+\]
 
 となる。
 
 つまり、外積は次の2つを合わせたベクトルである。
 
-- 大きさ：$\boldsymbol{A}$ と $\boldsymbol{B}$ が作る平行四辺形の面積
-- 向き：$\boldsymbol{A}$ と $\boldsymbol{B}$ が作る平面に垂直な向き
+- 大きさ：\(\boldsymbol{A}\) と \(\boldsymbol{B}\) が作る平行四辺形の面積
+- 向き：\(\boldsymbol{A}\) と \(\boldsymbol{B}\) が作る平面に垂直な向き
 
 2つのベクトルが平行なら、平行四辺形はつぶれて面積が0になる。そのため、
 
-$$
+\[
 \boldsymbol{A}\times\boldsymbol{B}
 =
 \boldsymbol{0}
-$$
+\]
 
 となる。
 
@@ -753,31 +750,31 @@ $$
 
 ### 外積の向き――右ねじの法則
 
-$\boldsymbol{A}$ と $\boldsymbol{B}$ が作る平面に垂直な向きには、表側と裏側の2通りがある。
+\(\boldsymbol{A}\) と \(\boldsymbol{B}\) が作る平面に垂直な向きには、表側と裏側の2通りがある。
 
 外積の向きは、右ねじの法則によって決める。
 
-$\boldsymbol{A}$ から $\boldsymbol{B}$ へ、なす角の小さい側に右ねじを回したとき、ねじが進む向きが、
+\(\boldsymbol{A}\) から \(\boldsymbol{B}\) へ、なす角の小さい側に右ねじを回したとき、ねじが進む向きが、
 
-$$
+\[
 \boldsymbol{A}\times\boldsymbol{B}
-$$
+\]
 
 の向きである。
 
 したがって、外積は、
 
-> 大きさは2つのベクトルが作る平行四辺形の面積、向きは $\boldsymbol{A}$ から $\boldsymbol{B}$ への右ねじの向き
+> 大きさは2つのベクトルが作る平行四辺形の面積、向きは \(\boldsymbol{A}\) から \(\boldsymbol{B}\) への右ねじの向き
 
 を持つベクトルである。
 
 ベクトルの順序を入れ替えると、右ねじを回す向きが逆になるため、外積の向きも反対になる。
 
-$$
+\[
 \boldsymbol{B}\times\boldsymbol{A}
 =
 -\boldsymbol{A}\times\boldsymbol{B}
-$$
+\]
 
 ### 回転との関係
 
@@ -791,7 +788,7 @@ $$
 
 外積は、成分を使って計算することもできる。次の公式は、必要な場合に参照すればよい。
 
-$$
+\[
 \boldsymbol{A}
 =
 \begin{pmatrix}
@@ -807,11 +804,11 @@ B_x\\
 B_y\\
 B_z
 \end{pmatrix}
-$$
+\]
 
 とすると、
 
-$$
+\[
 \boldsymbol{A}\times\boldsymbol{B}
 =
 \begin{pmatrix}
@@ -819,7 +816,7 @@ A_yB_z-A_zB_y\\
 A_zB_x-A_xB_z\\
 A_xB_y-A_yB_x
 \end{pmatrix}
-$$
+\]
 
 となる。
 
@@ -829,10 +826,10 @@ $$
 
 | 操作 | 計算 | 結果 | 基本的な意味 |
 |---|---|---|---|
-| 加法 | $\boldsymbol{A}+\boldsymbol{B}$ | ベクトル | 2つのベクトルを合成する |
-| スカラー倍 | $k\boldsymbol{A}$ | ベクトル | 大きさを変え、必要なら向きを反転する |
-| 内積 | $\boldsymbol{A}\cdot\boldsymbol{B}$ | スカラー | 同じ方向を向いている程度を表す |
-| 外積 | $\boldsymbol{A}\times\boldsymbol{B}$ | ベクトル | 平行四辺形の面積と、それに垂直な向きを表す |
+| 加法 | \(\boldsymbol{A}+\boldsymbol{B}\) | ベクトル | 2つのベクトルを合成する |
+| スカラー倍 | \(k\boldsymbol{A}\) | ベクトル | 大きさを変え、必要なら向きを反転する |
+| 内積 | \(\boldsymbol{A}\cdot\boldsymbol{B}\) | スカラー | 同じ方向を向いている程度を表す |
+| 外積 | \(\boldsymbol{A}\times\boldsymbol{B}\) | ベクトル | 平行四辺形の面積と、それに垂直な向きを表す |
 
 ベクトルは、矢印として捉えることも、成分の組として計算することもできる。
 
