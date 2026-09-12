@@ -46,7 +46,7 @@
 
 ## 技術確認
 
-- [ ] 第1章を変更した場合、`python3 scripts/verify_ch01_source.py` が成功する。
+- [ ] 確定原稿を変更した場合、`python3 scripts/verify_approved_sources.py` が成功する。
 - [ ] `quarto render --to html` が成功する。
 - [ ] `rg -n '^\\\[|^\\\]$' --glob '*.qmd'` が0件である。
 - [ ] 変更ページをブラウザで確認した。

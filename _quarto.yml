@@ -13,6 +13,7 @@ book:
     - part: mechanics/index.qmd
       chapters:
         - mechanics/vectors.qmd
+        - mechanics/vector-components.qmd
 
 format:
   html:

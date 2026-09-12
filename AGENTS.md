@@ -26,10 +26,12 @@
 ## 確定原稿
 
 - ユーザーが別タスク・チャットで「最終原稿」「確定稿」と指定した文章は、改善対象ではなく移植対象として扱う。
-- 第1章の正本は `docs/reference/ch01-final-source.md` である。文章、見出し、順序、数式の内容を独自判断で変更しない。
-- 公開用 `mechanics/vectors.qmd` では、Quartoに必要なYAMLの追加と、数式区切り `\(...\)` / `\[...\]` から `$...$` / `$$...$$` への変換だけを許可する。
-- 第1章を変更するときは、ユーザーから原稿変更の明示的な指示を受け、正本と公開用本文を同時に更新する。
-- 第1章の編集後は `python3 scripts/verify_ch01_source.py` を実行し、正本との一致を確認する。
+- 確定原稿の正本と公開用原稿の対応は次のとおりである。
+  - 第1章：`docs/reference/ch01-final-source.md` → `mechanics/vectors.qmd`
+  - 第2章：`docs/reference/ch02-final-source.md` → `mechanics/vector-components.qmd`
+- 公開用原稿では、Quartoに必要なYAMLの追加と、数式区切り `\(...\)` / `\[...\]` から `$...$` / `$$...$$` への変換だけを許可する。文章、見出し、順序、数式の内容を独自判断で変更しない。
+- 確定原稿を変更するときは、ユーザーから原稿変更の明示的な指示を受け、正本と公開用本文を同時に更新する。
+- 確定原稿の編集後は `python3 scripts/verify_approved_sources.py` を実行し、正本との一致を確認する。
 
 ## Quarto・数式
 
@@ -56,7 +58,7 @@
 変更後は少なくとも次を行う。
 
 ```bash
-python3 scripts/verify_ch01_source.py
+python3 scripts/verify_approved_sources.py
 quarto render --to html
 rg -n '^\\\[|^\\\]$' --glob '*.qmd'
 git diff --check

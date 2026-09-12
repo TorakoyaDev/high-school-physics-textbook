@@ -4,7 +4,7 @@
 
 ユーザーが最終原稿として確定した文章は、本ガイドより優先する。確定原稿をリポジトリへ移す際は、誤字修正、表現改善、節の追加・削除を独自に行わない。媒体上必要な記法変換だけを機械的に適用する。
 
-第1章の正本は `docs/reference/ch01-final-source.md` とし、公開用原稿との一致は `python3 scripts/verify_ch01_source.py` で検証する。
+確定原稿は `docs/reference/` に正本として保存し、公開用原稿との一致は `python3 scripts/verify_approved_sources.py` で検証する。
 
 ## 1. 本書の文体
 

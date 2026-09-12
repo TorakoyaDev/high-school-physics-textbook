@@ -1,0 +1,373 @@
+---
+title: "第2章　ベクトルの成分分解：1本の式を成分ごとに読む"
+number-sections: false
+---
+
+第1章では、ベクトルを矢印や成分で表し、加法やスカラー倍などの基本操作を学んだ。
+
+この章では、1本のベクトルを方向ごとのベクトルに分けて表す方法を考える。さらに、ベクトルの式を成分ごとの数の式として読み取れる理由を明らかにする。
+
+## 1. 斜めのベクトルを横と縦に分ける
+
+第1章では、ベクトル $\boldsymbol A$ を
+
+$$
+\boldsymbol A=
+\begin{pmatrix}
+A_x\\
+A_y
+\end{pmatrix}
+$$
+
+のように成分で表した。$A_x$ は $x$ 軸方向の成分、$A_y$ は $y$ 軸方向の成分である。
+
+この成分表示が表していることを、矢印を使って考えてみよう。
+
+斜めのベクトル $\boldsymbol A$ の始点から、まず横方向へ進み、そこから縦方向へ進むと、$\boldsymbol A$ の終点に到達する。横方向と縦方向の2本のベクトルを順につないだ結果が、もとのベクトル $\boldsymbol A$ になる。
+
+これは、第1章で学んだベクトルの加法における三角形の法則である。
+
+つまり、1本の斜めのベクトルは、横方向のベクトルと縦方向のベクトルに分けて表すことができる。ここから、このような成分による表し方を、ベクトルを使った式として書き表していこう。
+
+## 2. 単位ベクトルを使った成分分解
+
+大きさが $1$ のベクトルを、単位ベクトルという。
+
+単位ベクトルは大きさが $1$ に決まっているため、ベクトルの向きを表すために使うことができる。
+
+ベクトル $\boldsymbol A$ と同じ向きを持つ単位ベクトルを $\boldsymbol e_A$ とすると、$\boldsymbol A$ は
+
+$$
+\boldsymbol A
+=
+\lvert\boldsymbol A\rvert\boldsymbol e_A
+$$
+
+と表すことができる。
+
+この式では、$\lvert\boldsymbol A\rvert$ がベクトルの大きさを表し、$\boldsymbol e_A$ がベクトルの向きを表している。つまり、ベクトルを
+
+$$
+\text{大きさ}\times\text{向き}
+$$
+
+の形で表している。
+
+この考え方を使って、横方向と縦方向のベクトルを表してみよう。
+
+$x$ 軸の正方向を向き、大きさが $1$ のベクトルを
+
+$$
+\boldsymbol e_x=
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+$$
+
+とする。同様に、$y$ 軸の正方向を向き、大きさが $1$ のベクトルを
+
+$$
+\boldsymbol e_y=
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+$$
+
+とする。
+
+$\boldsymbol e_x$ は「右へ $1$」、$\boldsymbol e_y$ は「上へ $1$」を表している。
+
+単位ベクトルに数を掛けると、その方向を基準としたベクトルを作ることができる。たとえば、
+
+$$
+3\boldsymbol e_x
+$$
+
+は右向きで大きさが $3$ のベクトル、
+
+$$
+2\boldsymbol e_y
+$$
+
+は上向きで大きさが $2$ のベクトルである。
+
+したがって、「右へ $3$、上へ $2$」を表すベクトルは
+
+$$
+\boldsymbol A
+=
+3\boldsymbol e_x+2\boldsymbol e_y
+$$
+
+と表せる。
+
+一般に、
+
+$$
+\boldsymbol A=
+\begin{pmatrix}
+A_x\\
+A_y
+\end{pmatrix}
+$$
+
+は
+
+$$
+\boldsymbol A
+=
+A_x\boldsymbol e_x+A_y\boldsymbol e_y
+$$
+
+と表すことができる。
+
+ここで、
+
+- $A_x\boldsymbol e_x$ は $x$ 軸方向のベクトル
+- $A_y\boldsymbol e_y$ は $y$ 軸方向のベクトル
+
+である。
+
+このように、1本のベクトルを方向ごとのベクトルに分けることを成分分解という。反対に、分けたベクトルを足して元のベクトルに戻すことを再合成という。
+
+$$
+\boldsymbol A
+\quad\longleftrightarrow\quad
+A_x\boldsymbol e_x+A_y\boldsymbol e_y
+$$
+
+また、$\boldsymbol e_x,\boldsymbol e_y$ のように、ベクトルを表すときの方向の基準となるベクトルを基底ベクトルという。
+
+基底ベクトルは、必ずしも単位ベクトルである必要はなく、互いに垂直である必要もない。2次元では、平行でない2本のベクトルを基底として用いることができる。
+
+その中でも、直交座標系で成分を表すときには、各座標軸の正方向を向く単位ベクトル $\boldsymbol e_x,\boldsymbol e_y$ を基底として用いるのが一般的である。互いに垂直で大きさが $1$ の基底を用いることで、その係数を $x$ 成分、$y$ 成分としてそのまま読み取ることができる。
+
+## 3. 成分がただ一通りに決まることと係数比較
+
+同じ基底を用いると、1本のベクトルの成分はただ一通りに決まる。
+
+その理由を確かめるため、同じベクトル $\boldsymbol A$ が、仮に
+
+$$
+\boldsymbol A
+=
+A_x\boldsymbol e_x+A_y\boldsymbol e_y
+$$
+
+と
+
+$$
+\boldsymbol A
+=
+A'_x\boldsymbol e_x+A'_y\boldsymbol e_y
+$$
+
+の2通りに表されたとする。
+
+どちらも同じベクトルを表しているので、
+
+$$
+A_x\boldsymbol e_x+A_y\boldsymbol e_y
+=
+A'_x\boldsymbol e_x+A'_y\boldsymbol e_y
+$$
+
+が成り立つ。右辺の項を左辺へ移すと、
+
+$$
+(A_x-A'_x)\boldsymbol e_x
++
+(A_y-A'_y)\boldsymbol e_y
+=
+\boldsymbol 0
+$$
+
+となる。ここで、$\boldsymbol 0$ は大きさが $0$ のゼロベクトルである。
+
+第1項は $x$ 軸方向、第2項は $y$ 軸方向のベクトルである。横方向のベクトルによって縦方向のずれを打ち消すことはできず、縦方向のベクトルによって横方向のずれを打ち消すこともできない。
+
+したがって、2つのベクトルの和がゼロベクトルになるためには、それぞれの係数が $0$ でなければならない。
+
+$$
+A_x-A'_x=0,\qquad A_y-A'_y=0
+$$
+
+よって、
+
+$$
+A_x=A'_x,\qquad A_y=A'_y
+$$
+
+となる。これにより、同じ基底を用いる限り、ベクトルの成分はただ一通りに決まることが分かる。
+
+このように、基底ベクトルの一方を何倍しても、もう一方の向きのベクトルを作れないという関係を、線形独立という。
+
+成分がただ一通りに決まるため、2つのベクトル
+
+$$
+\boldsymbol A
+=
+A_x\boldsymbol e_x+A_y\boldsymbol e_y
+$$
+
+と
+
+$$
+\boldsymbol B
+=
+B_x\boldsymbol e_x+B_y\boldsymbol e_y
+$$
+
+が等しければ、対応する成分もそれぞれ等しくなる。
+
+$$
+\boldsymbol A=\boldsymbol B
+\quad\Longleftrightarrow\quad
+\begin{cases}
+A_x=B_x\\
+A_y=B_y
+\end{cases}
+$$
+
+このように、同じ基底ベクトルの前にある係数をそれぞれ比べることを、係数比較という。
+
+したがって、1本のベクトルの等式を、$x$ 軸方向と $y$ 軸方向の2本のスカラーの等式として読むことができる。
+
+## 4. ベクトル方程式を成分ごとの方程式に分ける
+
+ベクトル方程式
+
+$$
+2\boldsymbol A-\boldsymbol B=\boldsymbol C
+$$
+
+を考える。
+
+それぞれのベクトルを成分分解すると、
+
+$$
+\begin{aligned}
+\boldsymbol A&=A_x\boldsymbol e_x+A_y\boldsymbol e_y,\\
+\boldsymbol B&=B_x\boldsymbol e_x+B_y\boldsymbol e_y,\\
+\boldsymbol C&=C_x\boldsymbol e_x+C_y\boldsymbol e_y
+\end{aligned}
+$$
+
+となる。
+
+これらをもとの式に代入すると、
+
+$$
+2(A_x\boldsymbol e_x+A_y\boldsymbol e_y)
+-
+(B_x\boldsymbol e_x+B_y\boldsymbol e_y)
+=
+C_x\boldsymbol e_x+C_y\boldsymbol e_y
+$$
+
+となる。
+
+同じ基底ベクトルを含む項をまとめると、
+
+$$
+(2A_x-B_x)\boldsymbol e_x
++
+(2A_y-B_y)\boldsymbol e_y
+=
+C_x\boldsymbol e_x+C_y\boldsymbol e_y
+$$
+
+となる。
+
+$\boldsymbol e_x$ と $\boldsymbol e_y$ の係数をそれぞれ比較すれば、
+
+$$
+\begin{cases}
+2A_x-B_x=C_x\\
+2A_y-B_y=C_y
+\end{cases}
+$$
+
+が得られる。
+
+このように、加法、減法、スカラー倍を含む1本のベクトル方程式を、成分ごとのスカラー方程式に分けて読むことができる。
+
+## 5. 3次元への拡張
+
+3次元では、$x$ 軸、$y$ 軸、$z$ 軸の正方向を向く単位ベクトルを、それぞれ
+
+$$
+\boldsymbol e_x,\qquad
+\boldsymbol e_y,\qquad
+\boldsymbol e_z
+$$
+
+とする。
+
+ベクトル $\boldsymbol A$ は、
+
+$$
+\boldsymbol A=
+\begin{pmatrix}
+A_x\\
+A_y\\
+A_z
+\end{pmatrix}
+$$
+
+または
+
+$$
+\boldsymbol A
+=
+A_x\boldsymbol e_x
++
+A_y\boldsymbol e_y
++
+A_z\boldsymbol e_z
+$$
+
+と表すことができる。
+
+2つのベクトル $\boldsymbol A,\boldsymbol B$ が等しいとき、対応する3つの成分がそれぞれ等しい。
+
+$$
+\boldsymbol A=\boldsymbol B
+\quad\Longleftrightarrow\quad
+\begin{cases}
+A_x=B_x\\
+A_y=B_y\\
+A_z=B_z
+\end{cases}
+$$
+
+したがって、3次元では、1本のベクトル方程式を3本のスカラー方程式として読むことができる。
+
+## 6. まとめ
+
+1本のベクトルは、方向ごとのベクトルに成分分解できる。
+
+直交座標系では、各座標軸の正方向を向く単位ベクトルを使って、
+
+$$
+\boldsymbol A
+=
+A_x\boldsymbol e_x+A_y\boldsymbol e_y
+$$
+
+と表すことができる。
+
+同じ基底を用いる限り、1本のベクトルの成分はただ一通りに決まる。そのため、2つのベクトルが等しければ、対応する成分もそれぞれ等しい。
+
+$$
+\boldsymbol A=\boldsymbol B
+\quad\Longleftrightarrow\quad
+\begin{cases}
+A_x=B_x\\
+A_y=B_y
+\end{cases}
+$$
+
+この性質により、1本のベクトル方程式を、成分ごとのスカラー方程式として読むことができる。
